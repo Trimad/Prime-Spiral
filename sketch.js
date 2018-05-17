@@ -3,7 +3,7 @@
 var grid;
 var gui;
 var img;
-var tileSize = 0;
+var tileSize;
 var turtle;
 
 function windowResized() {
@@ -26,6 +26,7 @@ function setup() {
 
   fixSize();
   loadGUI();
+  frameRate(15);
   createCanvas(gridMultiplierSlider * tileSize + (gridMultiplierSlider - 1), gridMultiplierSlider * tileSize + (gridMultiplierSlider - 1), WEBGL);
   grid = new Grid(gridMultiplierSlider, gridMultiplierSlider, tileSize);
   grid.walk(startX, startY, 1, gridMultiplierSlider * gridMultiplierSlider);

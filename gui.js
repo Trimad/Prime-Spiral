@@ -1,7 +1,7 @@
 "use strict"
 
 var showTexture = false;
-var frameRateSlider = 60;
+var frameRateSlider = 15;
 var gridMultiplierSlider = 15;
 var startX = Math.ceil(gridMultiplierSlider / 2);
 var startY = Math.ceil(gridMultiplierSlider / 2);
@@ -14,7 +14,7 @@ function loadGUI() {
 
   gui = QuickSettings.create(0, 0, "Prime Spiral Setup")
     .addRange("Frame Rate", 1, 60, frameRateSlider, 1, frameRateSliderFunc)
-    .addRange("Grid Multiplier", 1, 51, gridMultiplierSlider, 2, gridMultiplierSliderFunc)
+    .addRange("Grid Multiplier", 1, 63, gridMultiplierSlider, 2, gridMultiplierSliderFunc)
     .addButton("Step Forward", stepForwardFunc)
     .addButton("Pause", stopSteppingFunc)
     .addButton("Step Backward", stepBackwardFunc)
