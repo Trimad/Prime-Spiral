@@ -1,6 +1,6 @@
 "use strict"
 
-var showTexture = false;
+var showTexture = true;
 var frameRateSlider = 15;
 var gridMultiplierSlider = 15;
 var startX = Math.ceil(gridMultiplierSlider / 2);
